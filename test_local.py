@@ -97,7 +97,7 @@ while True:
                                     }
                                     print(name + " 출석 성공")
                                     recognized_ids[name] = time.time()
-                                    """ try:
+                                    try:
                                         response = requests.post(url, data=json.dumps(datas), headers=headers, verify=False)
                                         if response.status_code == 200:
                                             print("Student ID sent successfully.")
@@ -105,7 +105,7 @@ while True:
                                             print("Failed to send student ID.")
                                     except requests.exceptions.RequestException as e:
                                         print("Failed to connect to the server:", str(e))
-                                        exit() """
+                                        exit()
                             else:
                                 recognized_ids[name] = time.time()
                         else:
